@@ -21,7 +21,7 @@ fn main() {
     let args = Args::parse();
     let Args { word, ending } = args;
     let result = string_starts_with(&word.to_string(), &ending.to_string());
-    println!("yo {} | {} | {}", word, ending, result);
+    println!("{} | {} | {}", word, ending, result);
 }
 
 fn string_starts_with(word: &str, ending: &str) -> bool {
